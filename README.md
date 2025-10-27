@@ -22,7 +22,7 @@ Sedangkan Course c1 = new Course("Java", 3, "Pak Andi"); adalah object nyata dar
   - Di ujung garis yang menempel pada class Student, akan ada simbol belah ketupat kosong (diamond putih).
   - Simbol ini menandakan hubungan Aggregation, yang berarti Student "memiliki" Course, tetapi Course memiliki siklus hidup yang independen (jika Student dihapus, Course tidak ikut terhapus).
 
-- Soal 4 Sudah ada di Code
+- Implementasi Inheritance (Pewarisan) dilakukan dengan menjadikan class Person sebagai superclass, yang kemudian diwarisi oleh subclass Student dan Lecturer, memungkinkan kedua peran tersebut berbagi properti dasar dan method seperti introduce(). Konsep Polymorphism (Bentuk Banyak) didemonstrasikan melalui penggunaan array bertipe superclass (Person[]), yang diisi dengan objek-objek subclass (Student dan Lecturer); saat loop dilakukan dan method introduce() dipanggil, program secara otomatis (saat runtime) akan menjalankan versi method yang sesuai dengan tipe objek aktual, menampilkan perilaku berbeda untuk mahasiswa dan dosen dari panggilan method yang sama.
 
 - Abstract Class: Gunakan saat mendefinisikan template dasar untuk sekumpulan class yang saling berhubungan erat ("is-a") dan Anda ingin berbagi implementasi kode dan atribut.
 
