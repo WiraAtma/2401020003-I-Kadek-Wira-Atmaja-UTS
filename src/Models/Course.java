@@ -23,7 +23,7 @@ public class Course {
 
     public void setCredit(int credit) {
         if (credit < 0) {
-            System.out.println("Credit tidak boleh negatif! Otomatis diset ke 0.");
+            System.out.println("Credit tidak boleh negatif. Otomatis diset ke 0.");
             this.credit = 0;
         } else {
             this.credit = credit;

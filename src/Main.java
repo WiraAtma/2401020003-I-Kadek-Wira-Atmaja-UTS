@@ -2,7 +2,7 @@ import Models.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Soal 1 & 2 - Class, Object, Encapsulation
+        // Soal 1 dan 2 - Class, Object, Encapsulation
         Course c1 = new Course("PBO", 3, "Pak Aziz");
         Course c2 = new Course("Kecerdasan Buatan", -2, "Pak Komang"); // credit negatif di tes
         c1.displayInfo();
@@ -29,7 +29,7 @@ public class Main {
         // Abstract Class: Gunakan saat membuat template untuk class yang berhubungan (relasi "is-a") & Anda ingin berbagi kode (atribut/method).
         // Interface: Gunakan saat mendefinisikan kontrak atau "kemampuan" (relasi "can-do") yang bisa dimiliki oleh class yang tidak berhubungan sekalipun.
         Exam exam = new Exam("UTS PBO", 88);
-        Assignment tugas = new Assignment("Tugas Code Polymorphsm , dan lainnya", 0.8);
+        Assignment tugas = new Assignment("Tugas Code UTS Pak Aziz", 0.8);
 
         System.out.println("\nNilai Akhir:");
         System.out.println(exam.title + " = " + exam.calculateFinalScore() + " (" + exam.getGrade() + ")");

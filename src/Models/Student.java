@@ -5,10 +5,10 @@ import java.util.List;
 
 public class Student extends Person {
     private String studentId;
-    private List<Course> courses; // Aggregation: Student punya daftar Course
+    private List<Course> courses; // Aggregation
 
     public Student(String name, String studentId) {
-        super(name); // Panggil constructor superclass (Person)
+        super(name);
         this.studentId = studentId;
         this.courses = new ArrayList<>();
     }
